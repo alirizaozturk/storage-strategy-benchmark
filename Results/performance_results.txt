@@ -1,0 +1,27 @@
+
+==================================================================
+   DOSYA ORGANIZASYONU - ASAMA 3: ARAMA & PERFORMANS ANALIZI
+==================================================================
+Arama seti        : 100 rastgele parola
+Toplam kayit      : 13644552 parola (Processed/passwords.txt)
+Rastgelelik seed  : 1781818109
+
+------------------------- DISK KULLANIMI -------------------------
+Yontem         Dosya                                  Boyut (MB)
+Raw            ../Storage/Raw/passwords.txt               123.56
+Hashed         ../Storage/Hashed/passwords.md5.txt        429.41
+Compressed     ../Storage/Compressed/passwords.txt.gz        56.67
+Orijinal       ../Processed/passwords.txt                 123.56
+Sikistirma orani  : %54.1 kazanc  (2.18x daha kucuk)
+
+---------------------- ARAMA PERFORMANSI -------------------------
+(Sureler milisaniye cinsindendir; her yontem 100 arama)
+
+Yontem           Ort.(ms)    Maks.(ms)     CPU%  Bellek(MB)   Bulunan
+Raw              146.8643     318.9621    100.0        2.88    100/100
+Hashed           132.2500     277.3228    100.0        5.12    100/100
+Compressed       416.3911     858.4231    100.0        5.12    100/100
+
+Decompression (tam acma) suresi : 579.7624 ms  (129561974 bayt acildi)
+Surec tepe bellek (peak RSS)    : 5.25 MB
+==================================================================

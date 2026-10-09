@@ -1,0 +1,18 @@
+# Datasets are not committed (size + third-party source); see README
+RawData/*
+Processed/*
+Storage/*/*
+!RawData/.gitkeep
+!Processed/.gitkeep
+!Storage/*/.gitkeep
+
+# Build outputs
+Code/*.o
+Code/preprocess
+Code/storage
+Code/search
+*.exe
+
+# OS
+desktop.ini
+Thumbs.db
